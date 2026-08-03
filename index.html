@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>Vijay Karthi — Software Engineer & Full Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Vijay Karthi — B.Sc. Computer Science and Statistics graduate from Kristu Jayanti College, Bangalore. Full Stack Developer, Backend Engineer, and AI Enthusiast with hands-on experience in React, Python, Java, and AI-powered applications." />
+  <meta name="keywords"
+    content="Vijay Karthi, software engineer, full stack developer, backend developer, AI enthusiast, portfolio, React, Python, Java, Bangalore" />
+  <meta name="author" content="Vijay Karthi" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vijay Karthi — Software Engineer & Full Stack Developer" />
+  <meta property="og:description"
+    content="Portfolio of Vijay Karthi — Full Stack Developer, Backend Engineer, and AI Enthusiast based in Bangalore, India." />
+  <meta property="og:url" content="https://vijaykarthi.dev" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vijay Karthi — Software Engineer" />
+  <meta name="twitter:description"
+    content="Full Stack Developer, Backend Engineer, and AI Enthusiast from Bangalore." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://vijaykarthi.dev" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230F766E'/><text x='50%' y='68%' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700' font-size='18'>VK</text></svg>" />
+
+  <style>
+    /* Inline critical CSS for above-the-fold */
+    body.loading {
+      overflow: hidden;
+    }
+
+    #loader {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body class="loading">
+
+  <!-- ── Loader ─────────────────────────────────────────── -->
+  <div id="loader" role="status" aria-label="Loading portfolio">
+    <div class="loader__logo">VK<span>.</span></div>
+    <div class="loader__bar"></div>
+  </div>
+
+  <!-- ── Cursor Glow ────────────────────────────────────── -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ── Scroll Progress ────────────────────────────────── -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0"
+    aria-valuemax="100"></div>
+
+  <!-- ════════════════════════════════════════════════════ -->
+  <!--  NAVIGATION                                          -->
+  <!-- ════════════════════════════════════════════════════ -->
+  <header id="main-nav" class="nav" role="banner">
+    <div class="nav__inner">
+      <!-- Brand -->
+      <a href="#hero" class="nav__logo" aria-label="Vijay Karthi — home">
+        VK<span>.</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#about" class="nav__link" data-section="about">About</a>
+        <a href="#skills" class="nav__link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav__link" data-section="projects">Projects</a>
+        <a href="#experience" class="nav__link" data-section="experience">Experience</a>
+        <a href="#education" class="nav__link" data-section="education">Education</a>
+        <a href="#certifications" class="nav__link" data-section="certifications">Certs</a>
+        <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <!-- Moon -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <!-- Sun -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+        <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="mobile-menu"
+          aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Mobile Menu ─────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-menu__backdrop" id="mobile-backdrop"></div>
+    <nav class="mobile-menu__panel" aria-label="Mobile navigation">
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#skills" class="mobile-menu__link">Skills</a>
+      <a href="#projects" class="mobile-menu__link">Projects</a>
+      <a href="#experience" class="mobile-menu__link">Experience</a>
+      <a href="#education" class="mobile-menu__link">Education</a>
+      <a href="#certifications" class="mobile-menu__link">Certifications</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════ -->
+  <!--  MAIN CONTENT                                        -->
+  <!-- ════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 1 · HERO                                        -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="Hero introduction">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero__content">
+        <!-- Left -->
+        <div class="hero__left">
+          <!-- Status Tag -->
+          <div class="status-badge hero__status" role="status">
+            <span class="status-badge__dot" aria-hidden="true"></span>
+            Available for Software Development Roles
+          </div>
+
+          <!-- Name -->
+          <h1 class="hero__name">
+            Vijay<br />
+            <span class="hero__name-accent">Karthi</span>
+          </h1>
+
+          <!-- Title with typing -->
+          <p class="hero__title">
+            <span id="typing-text" aria-live="polite" aria-atomic="true"></span><span class="cursor"
+              aria-hidden="true"></span>
+          </p>
+
+          <!-- Intro -->
+          <p class="hero__intro">
+            CS &amp; Statistics graduate from Kristu Jayanti College, Bangalore — building
+            full-stack systems, AI-powered applications, and data-driven tools with a focus
+            on clean engineering and elegant design.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero__ctas">
+            <a href="#projects" class="btn btn--primary btn--lg" id="hero-cta-projects">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+              Explore Projects
+            </a>
+            <a href="assets/resume/Vijay_Karthi_Resume.pdf" download class="btn btn--outline btn--lg"
+              id="hero-cta-resume">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+          <!-- Stat Pills -->
+          <div class="stat-pills hero__stats" aria-label="Quick statistics">
+            <div class="stat-pill">
+              <strong><span data-count="50" data-suffix="+">50+</span></strong>
+              DSA Problems Solved
+            </div>
+            <div class="stat-pill">
+              <strong><span data-count="4">4</span></strong>
+              Core Projects
+            </div>
+            <div class="stat-pill">
+              <strong>CS &amp; Stats</strong>
+              Graduate
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="hero__right" aria-hidden="true">
+          <div class="hero__graphic-wrap">
+            <div class="hero__graphic">
+              <img src="assets/images/hero-graphic.svg"
+                alt="Abstract engineering visualization representing Vijay Karthi's technical work" width="600"
+                height="450" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 2 · ABOUT                                       -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__header">
+          <div class="section__eyebrow">About Me</div>
+          <h2 class="section__title" id="about-title">Engineering with Intention</h2>
+          <p class="section__subtitle">
+            Driven by curiosity, grounded in CS fundamentals, and committed to building software that matters.
+          </p>
+        </header>
+
+        <div class="about__grid">
+          <!-- Text -->
+          <div class="about__text reveal reveal--left">
+            <p>
+              I'm <strong>Vijay Karthi</strong>, a <strong>B.Sc. Computer Science and Statistics</strong>
+              undergraduate at Kristu Jayanti College, Bangalore (2023–2026), developing expertise across the
+              full software stack — from designing REST APIs and building React frontends, to implementing
+              machine learning pipelines and working with statistical data.
+            </p>
+            <p>
+              My academic foundation bridges two disciplines: <strong>Computer Science</strong> — giving me
+              rigorous training in data structures, algorithms, DBMS, and OOP — and <strong>Statistics</strong>
+              — giving me strong analytical intuition for data-driven systems, probability models, and
+              quantitative problem solving.
+            </p>
+            <p>
+              Through practical experience as a <strong>Cybersecurity Intern at Edunet Foundation</strong>,
+              I've deepened my understanding of secure software development, network security principles, and
+              responsible engineering practices. I believe in writing code that is not just functional, but
+              clean, maintainable, and thoughtfully designed.
+            </p>
+            <p>
+              I'm actively seeking opportunities as a <strong>Software Engineer, Full Stack Developer,</strong>
+              or <strong>Software Development Apprentice</strong> where I can contribute to meaningful products
+              and continue growing in a fast-paced, engineering-driven environment.
+            </p>
+            <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;">
+              <a href="#contact" class="btn btn--primary">Let's Connect</a>
+              <a href="#projects" class="btn btn--ghost">View My Work</a>
+            </div>
+          </div>
+
+          <!-- Highlight Cards -->
+          <div class="about__highlights reveal reveal--right">
+            <div class="highlight-card">
+              <div class="highlight-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h4>CS &amp; Statistics Foundation</h4>
+              <p>Solid grounding in DSA, OOP, DBMS, probability, and statistical inference from a rigorous
+                dual-discipline degree.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h4>Full Stack &amp; REST APIs</h4>
+              <p>Built complete web applications with React frontends, REST API backends, and third-party AI service
+                integrations.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h4>Cybersecurity &amp; Testing</h4>
+              <p>Certified in cybersecurity and software testing — applying secure development principles and structured
+                testing methodologies.</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="16" />
+                  <line x1="8" y1="12" x2="16" y2="12" />
+                </svg>
+              </div>
+              <h4>Algorithmic Problem Solving</h4>
+              <p>Active practitioner with 50+ DSA problems solved, focusing on efficient algorithms and clean, readable
+                solution code.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 3 · SKILLS                                      -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__header">
+          <div class="section__eyebrow">Technical Skills</div>
+          <h2 class="section__title" id="skills-title">Tools of the Craft</h2>
+          <p class="section__subtitle">
+            A curated overview of the technologies and concepts I work with — organized by domain.
+          </p>
+        </header>
+
+        <div class="skills__grid reveal-stagger">
+
+          <!-- Programming Languages -->
+          <div class="skill-card reveal">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Programming Languages</h3>
+            </div>
+            <div class="skill-card__items">
+              <span class="tag">Java</span>
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript (ES6+)</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-card reveal">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Web Development</h3>
+            </div>
+            <div class="skill-card__items">
+              <span class="tag">React</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag tag--gold">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Data Science & AI -->
+          <div class="skill-card reveal">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Data Science &amp; AI</h3>
+            </div>
+            <div class="skill-card__items">
+              <span class="tag">pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">YOLOv8</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag tag--gold">yfinance</span>
+              <span class="tag tag--gold">Matplotlib</span>
+            </div>
+          </div>
+
+          <!-- CS Concepts -->
+          <div class="skill-card reveal">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3" />
+                  <circle cx="6" cy="6" r="3" />
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7" />
+                  <line x1="6" y1="9" x2="6" y2="21" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">CS Concepts</h3>
+            </div>
+            <div class="skill-card__items">
+              <span class="tag">Data Structures &amp; Algorithms</span>
+              <span class="tag">OOP</span>
+              <span class="tag">DBMS</span>
+              <span class="tag tag--gold">Software Testing</span>
+            </div>
+          </div>
+
+          <!-- Tools & Workflow -->
+          <div class="skill-card reveal">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Tools &amp; Workflow</h3>
+            </div>
+            <div class="skill-card__items">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag tag--gold">Linux CLI</span>
+            </div>
+          </div>
+
+          <!-- Mathematics & Analytics -->
+          <div class="skill-card reveal">
+            <div class="skill-card__header">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+              </div>
+              <h3 class="skill-card__title">Mathematics &amp; Analytics</h3>
+            </div>
+            <div class="skill-card__items">
+              <span class="tag">Probability &amp; Statistics</span>
+              <span class="tag">Statistical Inference</span>
+              <span class="tag tag--gold">Quantitative Analysis</span>
+              <span class="tag tag--gold">Data Visualization</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 4 · PROJECTS                                    -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container container--wide">
+        <header class="section__header">
+          <div class="section__eyebrow">Featured Projects</div>
+          <h2 class="section__title" id="projects-title">Selected Work</h2>
+          <p class="section__subtitle">
+            Four handcrafted projects — each built to solve a real problem, backed by engineering rigour and clean
+            implementation.
+          </p>
+        </header>
+
+        <!-- Grid injected by main.js -->
+        <div id="projects-grid" class="projects__grid"></div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 5 · EXPERIENCE                                  -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section__header">
+          <div class="section__eyebrow">Experience</div>
+          <h2 class="section__title" id="experience-title">Professional Timeline</h2>
+          <p class="section__subtitle">
+            Hands-on industry exposure that shaped my engineering perspective and approach to security-minded software
+            development.
+          </p>
+        </header>
+
+        <div class="timeline reveal">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__company">Edunet Foundation</span>
+                <span class="timeline__period">Cybersecurity Internship</span>
+              </div>
+              <h3 class="timeline__role">Cybersecurity Intern</h3>
+              <ul class="timeline__points" aria-label="Key responsibilities and learnings">
+                <li class="timeline__point">
+                  Completed a structured cybersecurity training program covering network security fundamentals, threat
+                  identification, and risk assessment methodologies.
+                </li>
+                <li class="timeline__point">
+                  Gained practical exposure to secure software development practices, including input validation,
+                  authentication flows, and data protection principles.
+                </li>
+                <li class="timeline__point">
+                  Participated in hands-on vulnerability assessment exercises — learning to identify common attack
+                  vectors including SQL injection, XSS, and misconfigured permissions.
+                </li>
+                <li class="timeline__point">
+                  Developed a foundational understanding of network protocols, firewall configurations, and intrusion
+                  detection systems in a supervised lab environment.
+                </li>
+                <li class="timeline__point">
+                  Applied learnings toward writing security-conscious code and developing awareness of OWASP Top 10
+                  vulnerabilities in web application design.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 6 · EDUCATION                                   -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section__header">
+          <div class="section__eyebrow">Education</div>
+          <h2 class="section__title" id="education-title">Academic Background</h2>
+          <p class="section__subtitle">
+            A rigorous undergraduate programme bridging the disciplines of Computer Science and applied Statistics.
+          </p>
+        </header>
+
+        <div class="education__grid reveal">
+          <!-- Degree Card -->
+          <div class="edu-card">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </div>
+            <h3 class="edu-card__degree">B.Sc. Computer Science and Statistics</h3>
+            <p class="edu-card__school">Kristu Jayanti College, Bengaluru, Karnataka</p>
+            <p class="edu-card__period">2023 – 2026 &nbsp;·&nbsp; Currently Pursuing</p>
+            <div class="edu-card__courses" aria-label="Key coursework">
+              <span class="tag">Data Structures</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">DBMS</span>
+              <span class="tag">OOP with Java</span>
+              <span class="tag tag--gold">Probability &amp; Statistics</span>
+              <span class="tag tag--gold">Statistical Inference</span>
+              <span class="tag tag--gold">Linear Algebra</span>
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Computer Networks</span>
+            </div>
+          </div>
+
+          <!-- Institution Info Card -->
+          <div class="edu-card">
+            <div class="edu-card__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <h3 class="edu-card__degree">Kristu Jayanti College</h3>
+            <p class="edu-card__school">Autonomous Institution — Bengaluru, Karnataka</p>
+            <p class="edu-card__period">Affiliated to Bangalore University</p>
+            <div class="edu-card__courses" style="margin-top:0.5rem;">
+              <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.7;">
+                A premier autonomous college in Bengaluru offering a holistic academic environment that blends
+                theoretical rigour with industry-relevant practical exposure. The CS &amp; Statistics programme uniquely
+                integrates programming, mathematical analysis, and data science fundamentals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 7 · CERTIFICATIONS                              -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <div class="container">
+        <header class="section__header">
+          <div class="section__eyebrow">Certifications</div>
+          <h2 class="section__title" id="certifications-title">Credentials &amp; Recognition</h2>
+          <p class="section__subtitle">
+            Industry certifications demonstrating validated expertise in cybersecurity and software quality assurance.
+          </p>
+        </header>
+
+        <div class="cert__grid reveal">
+          <!-- Cybersecurity -->
+          <div class="cert-card">
+            <div class="cert-card__badge" aria-hidden="true">🛡</div>
+            <div class="cert-card__info">
+              <h3 class="cert-card__title">Cybersecurity Certification</h3>
+              <p class="cert-card__issuer">Credly &nbsp;·&nbsp; Verified Digital Badge</p>
+            </div>
+          </div>
+
+          <!-- Software Testing -->
+          <div class="cert-card">
+            <div class="cert-card__badge" aria-hidden="true">✓</div>
+            <div class="cert-card__info">
+              <h3 class="cert-card__title">Software Testing Certification</h3>
+              <p class="cert-card__issuer">ICT Infotech &nbsp;·&nbsp; Verified Certificate</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  § 8 · CONTACT                                     -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__header">
+          <div class="section__eyebrow">Contact</div>
+          <h2 class="section__title" id="contact-title">Let's Build Something</h2>
+          <p class="section__subtitle">
+            Open to full-time roles, internships, and collaboration. Reach out — I respond promptly.
+          </p>
+        </header>
+
+        <div class="contact__grid">
+          <!-- Left -->
+          <div class="contact__left reveal reveal--left">
+            <div>
+              <h3 class="contact__cta-title">
+                Ready to bring your<br />
+                <span>next idea to life?</span>
+              </h3>
+              <p class="contact__cta-desc" style="margin-top:0.75rem;">
+                I'm actively exploring opportunities as a Software Engineer, Full Stack Developer, or Software
+                Development Apprentice.
+                Whether you're a recruiter, engineering manager, or fellow builder — I'd love to connect.
+              </p>
+            </div>
+
+            <div class="contact__links" aria-label="Contact links">
+              <a href="mailto:Vijaykarthi.gopi@gmail.com" class="contact__link" id="link-email">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </span>
+                Vijaykarthi.gopi@gmail.com
+              </a>
+              <a href="tel:+919902360383" class="contact__link" id="link-phone">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.91 6.91l1.36-1.36a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
+                +91 9902360383
+              </a>
+              <a href="https://github.com/vijay-karthi" target="_blank" rel="noopener noreferrer" class="contact__link"
+                id="link-github">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                </span>
+                github.com/vijay-karthi
+              </a>
+              <a href="https://www.linkedin.com/in/vijay-karthi-a42875353" target="_blank" rel="noopener noreferrer"
+                class="contact__link" id="link-linkedin">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </span>
+                linkedin.com/in/vijay-karthi-a42875353
+              </a>
+              <div class="contact__link" style="cursor:default;">
+                <span class="contact__link-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                Bangalore, Karnataka, India
+              </div>
+            </div>
+
+            <a href="assets/resume/Vijay_Karthi_Resume.pdf" download class="btn btn--outline btn--lg"
+              id="contact-resume-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════ -->
+  <!--  FOOTER                                              -->
+  <!-- ════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="footer__brand" aria-label="Back to top">VK<span>.</span></a>
+        <p class="footer__copy">
+          Designed &amp; built by <strong>Vijay Karthi</strong> &nbsp;·&nbsp;
+          Bangalore, India &nbsp;·&nbsp;
+          <span id="footer-year"></span>
+        </p>
+        <div style="display:flex;gap:0.75rem;align-items:center;">
+          <a href="https://github.com/vijay-karthi" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
+            style="color:var(--text-secondary);transition:color 0.2s;"
+            onmouseover="this.style.color='var(--accent-emerald)'"
+            onmouseout="this.style.color='var(--text-secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/vijay-karthi-a42875353" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn profile" style="color:var(--text-secondary);transition:color 0.2s;"
+            onmouseover="this.style.color='var(--accent-emerald)'"
+            onmouseout="this.style.color='var(--text-secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="mailto:Vijaykarthi.gopi@gmail.com" aria-label="Send email"
+            style="color:var(--text-secondary);transition:color 0.2s;"
+            onmouseover="this.style.color='var(--accent-emerald)'" onmouseout="this.style.color='var(--text-secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Scroll-To-Top ────────────────────────────────── -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top of page">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- ── Project Details Modal ────────────────────────── -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal" id="modal-content"></div>
+  </div>
+
+  <!-- ── Scripts ──────────────────────────────────────── -->
+  <script src="js/effects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Footer year
+    document.getElementById('footer-year').textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+
+</html>
